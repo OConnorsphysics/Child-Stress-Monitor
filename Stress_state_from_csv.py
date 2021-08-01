@@ -2,7 +2,7 @@
 """
 Created on Sun Aug  1 10:03:05 2021
 
-@author: Liam O'Connor
+@authors: Liam O'Connor, Hiranya Maharaja
 """
 import sys
 from math import sqrt, acos, pi, sin
@@ -17,12 +17,12 @@ import pandas as pd
 import sqlite3
 from scipy import fft
 
-filepath = 'C:\python\PyQt5\SampleCSVFile_2kb.csv'  #File containing EEG data we want to open and monitor
+filepath = 'SampleCSVFile_2kb.csv'  #File containing EEG data we want to open and monitor
 STRESSSTATE = 0     #global variable for stress level as percentage
 
 
-df = pd.read_csv(filepath)  #pandas library reads file into a data frame
-print(df)       #prints the data frame 
+df = pd.read_csv(filepath)
+print(df)
 
 
 
