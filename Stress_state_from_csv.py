@@ -2,7 +2,7 @@
 """
 Created on Sun Aug  1 10:03:05 2021
 
-@authors: Liam O'Connor, Hiranya Maharaja
+@authors: Liam O'Connor, Hiranya Maharaja, Jenny Wei
 """
 import sys
 from math import sqrt, acos, pi, sin
@@ -30,6 +30,6 @@ print(df)
 if STRESSSTATE >= 75:
     print("The child is highly stressed")
 elif (STRESSSTATE < 75 and STRESSSTATE >=50):
-    print ("The child is moderatley stressed out")
+    print ("The child is moderately stressed out")
 else:
     print ("The child is not noticeably stressed out")
