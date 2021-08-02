@@ -1,7 +1,7 @@
 """
 Created on Sun Aug  1 10:03:05 2021
 
-@author: Liam O'Connor, Hiryana Maharaja
+@author: Liam O'Connor, Hiryana Maharaja, Jenny Wei
 """
 import sys
 from math import sqrt, acos, pi, sin
@@ -29,11 +29,11 @@ try:            #try loop to allow keyboard interrupt to terminate program
         print(df.iat[i,1]) #df.iat returns the value at given indices
         STRESSSTATE = df.iat[i,1] #update the stressstate (frequency hopefully) to the new line in file.
         
-        if STRESSSTATE >= 75:
+        if STRESSSTATE >= 75:  # Beta waves 18-22 Hz
             print("The child is highly stressed")
-        elif (STRESSSTATE < 75 and STRESSSTATE >=50):
-            print ("The child is moderatley stressed out")
-        else:
+        elif (STRESSSTATE < 75 and STRESSSTATE >=50): # Beta waves 22-26 Hz
+            print ("The child is moderately stressed out")
+        else: # Beta waves 26-30 Hz
             print ("The child is not noticeably stressed out")
                     
         if i==16:          #set to number of lines in file to end loop without keyboard interrupt
